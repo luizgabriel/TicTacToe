@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Tic Tac Toe coding challenge for Bible Project! This project is a fun and interactive way to demonstrate your coding skills using React Native.
+Welcome to the Tic Tac Toe coding challenge for the Bible Project! This project is a fun and interactive way to demonstrate your coding skills using React Native.
 
 ### Design Decisions
 
@@ -44,3 +44,13 @@ To run the application on an Android emulator, use:
 ```sh
 yarn android
 ```
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="300px"><img src="https://github.com/luizgabriel/TicTacToe/assets/7469145/48d4fc7f-9b5f-41b3-91f9-92fb01236e38" alt="Preview 1" /></td>
+    <td width="300px"><img src="https://github.com/luizgabriel/TicTacToe/assets/7469145/66770bbc-3bfd-4c5c-b04a-56e1b83f9ddf" alt="Preview 2" /></td>
+    <td width="300px"><img src="https://github.com/luizgabriel/TicTacToe/assets/7469145/c88e6c6f-dc4d-4b19-953f-21142fa97ce2" alt="Preview 3" /></td>
+  </tr>
+</table>
