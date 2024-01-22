@@ -12,3 +12,29 @@ To get started with this project, clone the repository to your local machine.
 git clone git@github.com:luizgabriel/TicTacToe.git
 cd TicTacToe
 ```
+
+## Installation of Dependencies
+
+Before running the application, install the required dependencies:
+
+```sh
+yarn install
+```
+
+## Starting the Application
+
+### For iOS
+
+To run the application on an iOS simulator, execute the following command:
+
+```sh
+yarn ios
+```
+
+### For Android
+
+To run the application on an Android emulator, use:
+
+```sh
+yarn android
+```
