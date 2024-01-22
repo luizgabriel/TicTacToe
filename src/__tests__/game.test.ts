@@ -7,6 +7,8 @@ import {
   isLeftCell,
   isRightCell,
   isTopCell,
+  togglePlayer,
+  updateBoard,
 } from '@/game';
 
 describe('Game Rules', () => {
@@ -47,6 +49,26 @@ describe('Game Rules', () => {
 
     it.each([0, 1, 2, 3, 4, 5])('index %d should not be bottom cell', index => {
       expect(isBottomCell(index, 3)).toBeFalsy();
+    });
+  });
+
+  describe('updateBoard', () => {
+    it('should update board correctly', () => {
+      const cells: CellValue[] = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+      const newCells = [' ', ' ', ' ', ' ', 'X', ' ', ' ', ' ', ' '];
+      expect(updateBoard(4, 'X')(cells)).toEqual(newCells);
+    });
+
+    it('should not update board if cell is not empty', () => {
+      const cells: CellValue[] = [' ', ' ', ' ', ' ', 'X', ' ', ' ', ' ', ' '];
+      expect(updateBoard(4, 'X')(cells)).toEqual(cells);
+    });
+  });
+
+  describe('togglePlayer', () => {
+    it('should toggle player correctly', () => {
+      expect(togglePlayer('X')).toBe('O');
+      expect(togglePlayer('O')).toBe('X');
     });
   });
 
